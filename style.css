@@ -185,7 +185,7 @@ article.flowgrid-brick { width: 300px; }
 .tagcloud a:hover { color: #fff !important; }
 
 /* Form elements */
-input[type="text"], input[type="password"], textarea { border-color: #cecece; color: #777; }
+input[type="text"], input[type="password"], textarea { border-color: #cecece; color: #777; margin: 5px 0; }
 input[type="submit"], input[type="reset"], input[type="button"] { background: url(images/button_bg.png) bottom left repeat-x; color: #fff; }
 
 /* Navigation */
@@ -282,6 +282,22 @@ footer[role="contentinfo"] .wrapper { padding: 20px 0; }
 	position: relative;
 }
 
+#flowGrid p {
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+}
+
 #form-wysija-2-php-firstname, #form-wysija-2-php-lastname, #form-wysija-2-php-wysija-to {
 	width: 95%;
+}
+
+#flowGrid div.host-wrapper {
+	width: 290px;
+	border:1px #cecece solid
+	padding: 10px;
+	margin: 0 10px 10px 0;
+}
+#flowGrid div.host-wrapper p {
+	padding:10px;
 }

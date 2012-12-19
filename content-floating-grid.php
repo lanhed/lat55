@@ -17,10 +17,11 @@ global $themolio_options, $loop_iteration;
 
 <?php if ($loop_iteration + 1 == $themolio_options['grid_columns']): ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-grid-horizontal '.$gridclass); ?>>
+    <h3 class="widget-title">Håll dig uppdaterad</h3>
 <?php
 $widgetdata=array (
     'title' => 'Håll dig uppdaterad',
-    'instruction' => 'Med vårt nyhetsbrev håller du dig uppdaterad kring våra event. Lägg till din epostadress så meddelar vi dig när vi har något på gång',
+    'instruction' => 'Med vårt nyhetsbrev håller du dig uppdaterad kring våra event. Lägg till din epostadress så meddelar vi dig när vi har något på gång.',
     'lists' => 
         array (
             0 => '1',

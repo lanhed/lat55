@@ -126,15 +126,10 @@ function themolio_enqueue_head_scripts() {
 add_action('wp_enqueue_scripts', 'themolio_enqueue_head_scripts');
 
 function themolio_enqueue_footer_scripts() {
-    /*
-<script type="text/javascript" src="js/flowgrid.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>*/
-    if ( is_front_page() ) {
-        wp_register_script('flowgrid-js', get_template_directory_uri().'/js/flowgrid.js',array(), false, true);
-        wp_enqueue_script('flowgrid-js');
-        wp_register_script('flowgrid-scripts-js', get_template_directory_uri().'/js/scripts.js',array(), false, true);
-        wp_enqueue_script('flowgrid-scripts-js');
-    }
+    wp_register_script('flowgrid-js', get_template_directory_uri().'/js/flowgrid.js',array(), false, true);
+    wp_enqueue_script('flowgrid-js');
+    wp_register_script('flowgrid-scripts-js', get_template_directory_uri().'/js/scripts.js',array(), false, true);
+    wp_enqueue_script('flowgrid-scripts-js');
 }
 add_action('wp_enqueue_scripts','themolio_enqueue_footer_scripts');
 
