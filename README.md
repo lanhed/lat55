@@ -1,4 +1,4 @@
-lat55.local
+lat55 WP theme
 ===========
 
-Wordpress site with custom theme
+Custom theme for Wordpress based on the Themolio theme: http://dezineappz.com/themolio
