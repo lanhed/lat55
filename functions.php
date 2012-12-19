@@ -39,7 +39,7 @@ function themolio_setup() {
      * you will have to modify the width and height mentioned below as well
      */
     add_image_size('themolio-two-col-grid-image-nosidebar',460,300,true);
-    add_image_size('themolio-three-col-grid-image-nosidebar',290,200,true);
+    add_image_size('themolio-three-col-grid-image-nosidebar',300,200,true);
     add_image_size('themolio-four-col-grid-image-nosidebar',210,150,true);
 
     /**
@@ -124,6 +124,19 @@ function themolio_enqueue_head_scripts() {
     wp_enqueue_script('themolio-theme-js');
 }
 add_action('wp_enqueue_scripts', 'themolio_enqueue_head_scripts');
+
+function themolio_enqueue_footer_scripts() {
+    /*
+<script type="text/javascript" src="js/flowgrid.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>*/
+    if ( is_front_page() ) {
+        wp_register_script('flowgrid-js', get_template_directory_uri().'/js/flowgrid.js',array(), false, true);
+        wp_enqueue_script('flowgrid-js');
+        wp_register_script('flowgrid-scripts-js', get_template_directory_uri().'/js/scripts.js',array(), false, true);
+        wp_enqueue_script('flowgrid-scripts-js');
+    }
+}
+add_action('wp_enqueue_scripts','themolio_enqueue_footer_scripts');
 
 /**
  * Add style statements to the head

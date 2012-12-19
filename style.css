@@ -51,7 +51,7 @@ textarea { overflow: auto; font-family: inherit; font-size: 100%; }
 
 /* Body */
 body { background: #e5e5e5 url(images/background.png) repeat; }
-.wrapper { width: 1000px; margin: 0 auto; overflow: hidden; text-align: left; }
+.wrapper { max-width: 1000px; margin: 0 auto; overflow: hidden; text-align: left; }
 #content .wrapper { padding: 20px; }
 .container { float: left; width: 740px; }
 .fullcontainer { width: 100%; }
@@ -62,6 +62,9 @@ body { background: #e5e5e5 url(images/background.png) repeat; }
 .tablayout td { vertical-align: middle; }
 .tablayout td.left { text-align: left; }
 .tablayout td.right { text-align: right; }
+
+.header-wrap {
+}
 
 /* Header */
 header[role="banner"], header[role="banner"] .wrapper, header[role="banner"] .tablayout { height: 130px; }
@@ -96,6 +99,7 @@ nav { background: url(images/menu_bg.png) repeat; }
 
 /* Posts */
 article.post, article.page, article.type-attachment { margin-bottom: 30px; background-color: #fff; border: 1px #cecece solid; text-shadow: #fff 1px 1px; padding: 20px; }
+article.flowgrid-brick { width: 300px; }
 .entry-title { font-family: Georgia, serif; color: #333; font-weight: 300; margin-bottom: 10px; font-size: 24px; }
 .entry-title a { color: #555; }
 .entry-title a:hover { color: #111; }
@@ -152,7 +156,7 @@ article.post, article.page, article.type-attachment { margin-bottom: 30px; backg
 .grid-col-3 { width: 31%; }
 .grid-col-4 { width: 23%; }
 .grid-horizontal-col-2 { width: 44%; }
-.grid-horizontal-col-3 { width: 27%; }
+.grid-horizontal-col-3 { width: 30%; }
 .grid-horizontal-col-4 { width: 19%; }
 .grid-col article.post { padding: 10px !important; margin-bottom: 20px; }
 .grid-title { font-size: 18px; margin-bottom: 5px; }
@@ -273,3 +277,11 @@ img.size-full, img.size-large { max-width: 100%; width: auto; height: auto; }
 /* Footer */
 footer[role="contentinfo"] { background: url(images/header_bg.png) repeat; font-size: 13px; color: #999; text-shadow: #000 1px 1px; }
 footer[role="contentinfo"] .wrapper { padding: 20px 0; }
+
+#flowGrid {
+	position: relative;
+}
+
+#form-wysija-2-php-firstname, #form-wysija-2-php-lastname, #form-wysija-2-php-wysija-to {
+	width: 95%;
+}

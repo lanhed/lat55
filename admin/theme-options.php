@@ -84,7 +84,8 @@ function themolio_grid_layout() {
 function themolio_blog_style() {
     $blog_styles = array(
         'standard' => array('value' => 'standard', 'label' => __('Standard','themolio')),
-        'grid' => array('value' => 'grid', 'label' => __('Grid','themolio'))
+        'grid' => array('value' => 'grid', 'label' => __('Grid','themolio')),
+        'flowGrid' => array('value' => 'flowGrid', 'label' => __('FlowGrid','themolio'))
     );
     return apply_filters('themolio_blog_style', $blog_styles);
 }

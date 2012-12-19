@@ -300,6 +300,10 @@ msgstr ""
 msgid "Grid"
 msgstr ""
 
+#: admin/theme-options.php:88
+msgid "FlowGrid"
+msgstr ""
+
 #: admin/theme-options.php:121
 msgid "Default settings restored"
 msgstr ""
