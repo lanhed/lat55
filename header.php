@@ -45,49 +45,52 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header role="banner">
-    <div class="wrapper">
-    <table class="tablayout"><tr>
-        <?php if(trim($themolio_options['custom_logo']) != ''): ?>
-        <td class="tdleft" style="width:100px;max-height:130px;padding-right:15px;">
-            <a href="<?php echo home_url(); ?>"><img class="custom-logo" src="<?php echo $themolio_options['custom_logo']; ?>"/></a>
-        </td>
-        <?php endif; ?>
-        <td class="tdleft" style="width:89%;">
-            <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-            <?php if(trim(get_bloginfo('description')) != ''): ?>
-            <p class="site-desc"><?php bloginfo('description'); ?></p>
-            <?php endif; ?>
-        </td>
-    </tr></table>
-    </div>
-</header> <!-- End of banner -->
 
-<nav>
-    <div class="wrapper">
-        <?php if($themolio_is_mobile): ?>
-            <?php themolio_pages_dropdown(); ?>
-        <?php else: ?>
-            <?php wp_nav_menu(array('theme_location' => 'primary', 'container_class' => 'main-menu clearfix')); ?>
+    <div class="header-wrap">
+        <header role="banner">
+            <div class="wrapper">
+            <table class="tablayout"><tr>
+                <?php if(trim($themolio_options['custom_logo']) != ''): ?>
+                <td class="tdleft" style="width:100px;max-height:130px;padding-right:15px;">
+                    <a href="<?php echo home_url(); ?>"><img class="custom-logo" src="<?php echo $themolio_options['custom_logo']; ?>"/></a>
+                </td>
+                <?php endif; ?>
+                <td class="tdleft" style="width:89%;">
+                    <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <?php if(trim(get_bloginfo('description')) != ''): ?>
+                    <p class="site-desc"><?php bloginfo('description'); ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr></table>
+            </div>
+        </header> <!-- End of banner -->
 
-        <?php if(!$themolio_is_mobile): ?>
-        <div class="social-icons">
-            
-            <?php if(trim($themolio_options['facebook_user']) != ''): ?>
-            <a class="social-link" href="http://www.facebook.com/<?php echo $themolio_options['facebook_user']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png"/></a>
-            <?php endif; ?>
-            <?php if(trim($themolio_options['twitter_user']) != ''): ?>
-            <a class="social-link" href="http://www.twitter.com/<?php echo $themolio_options['twitter_user']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"/></a>
-            <?php endif; ?>
-            <?php if($themolio_options['enable_rss']): ?>
-            <a class="social-link" href="<?php bloginfo('rss2_url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social_rss_icon.png"/></a>
-            <?php endif; ?>
-            <?php /*get_search_form(); */ ?>
-        </div>
-        <?php endif; ?>
-        <?php endif; ?>
+        <nav>
+            <div class="wrapper">
+                <?php if($themolio_is_mobile): ?>
+                    <?php themolio_pages_dropdown(); ?>
+                <?php else: ?>
+                    <?php wp_nav_menu(array('theme_location' => 'primary', 'container_class' => 'main-menu clearfix')); ?>
+
+                <?php if(!$themolio_is_mobile): ?>
+                <div class="social-icons">
+                    
+                    <?php if(trim($themolio_options['facebook_user']) != ''): ?>
+                    <a class="social-link" href="http://www.facebook.com/<?php echo $themolio_options['facebook_user']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png"/></a>
+                    <?php endif; ?>
+                    <?php if(trim($themolio_options['twitter_user']) != ''): ?>
+                    <a class="social-link" href="http://www.twitter.com/<?php echo $themolio_options['twitter_user']; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"/></a>
+                    <?php endif; ?>
+                    <?php if($themolio_options['enable_rss']): ?>
+                    <a class="social-link" href="<?php bloginfo('rss2_url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/social_rss_icon.png"/></a>
+                    <?php endif; ?>
+                    <?php /*get_search_form(); */ ?>
+                </div>
+                <?php endif; ?>
+                <?php endif; ?>
+            </div>
+        </nav> <!-- End of dropdown menu -->
     </div>
-</nav> <!-- End of dropdown menu -->
 
 <div id="content"> <!-- Start of content -->
     <div class="wrapper"> <!-- Start of content wrapper -->
