@@ -288,8 +288,13 @@ footer[role="contentinfo"] .wrapper { padding: 20px 0; }
 	*zoom:1;
 }
 
-#form-wysija-2-php-firstname, #form-wysija-2-php-lastname, #form-wysija-2-php-wysija-to {
+.widget_wysija_cont p {
+	display: block!important;
+
+}
+.widget_wysija_cont p #form-wysija-2-php-firstname, #form-wysija-2-php-lastname, #form-wysija-2-php-wysija-to,#form-wysija-2-firstname, #form-wysija-2-lastname, #form-wysija-2-wysija-to {
 	width: 95%;
+	display:block;
 }
 
 #flowGrid div.host-wrapper {

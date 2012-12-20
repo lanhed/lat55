@@ -37,16 +37,16 @@ $widgetdata=array (
             'firstname' => 
         array (
             'column_name' => 'firstname',
-            'label' => 'First name',
+            'label' => 'Förnamn',
         ),
             'lastname' => 
         array (
             'column_name' => 'lastname',
-            'label' => 'Last name',
+            'label' => 'Efternamn',
         ),
             'email' => 
         array (
-            'label' => 'Epost',
+            'label' => 'E-post',
         ),
     ),
     'submit' => 'Do it!',
