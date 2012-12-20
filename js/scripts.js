@@ -4,7 +4,12 @@
 // 	text:'Lorem'
 // });
 
-$('#flowGrid').flowGrid({
-	hspace:10,
-	vspace:10
-});
+(function($,window,document, undefined) {
+
+	$(function() {
+		$('#flowGrid').flowGrid({
+			hspace:10,
+			vspace:10
+		});
+	})
+})(jQuery, window, document)
