@@ -306,3 +306,59 @@ footer[role="contentinfo"] .wrapper { padding: 20px 0; }
 #flowGrid div.host-wrapper p {
 	padding:10px;
 }
+
+
+/* ******** */
+
+header[role="banner"] {
+	background-image: none;
+}
+
+h1.site-title {
+	visibility: hidden;
+}
+
+.site-title a, .site-desc {
+	color: rgb(0,0,0);
+	text-shadow: none;
+	padding-bottom: 3px;
+}
+
+.tablayout td {
+	vertical-align: bottom;
+}
+
+.embed-youtube {
+	float: left;
+	padding-right: 13px;
+	text-align: center;
+	display: block;
+}
+
+.social-icons {
+	float: right;
+	padding-top: 6px;
+}
+
+.main-menu {
+	float: left;
+}
+
+.entry-content .contact-form * {
+	width: 400px;
+}
+
+input[type="email"] {
+	border-color: #CECECE;
+	color: #777;
+	padding: 5px;
+	border: 1px solid;
+}
+
+ul.eme_events_list {
+	list-style:none;
+	margin:0;
+}
+ul.eme_events_list h3 {
+	margin-bottom:5px;
+}
